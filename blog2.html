@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Post #2</title>
+    <style>
+        div {
+            shape-outside: ellipse(100px 200px at 50% 50%);
+            clip-path: ellipse(100px 175px at 50% 50%);
+            width: 200px;
+            height: 425px;
+            float: left;
+            opacity: .2;
+            background-color: lightblue;
+        }
+
+        pre {
+            display: inline-block;
+            border-color: black;
+            border-style: solid;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Blog Post #2</h1>
+    <div></div>
+    <p>This week we started learning about CSS which I found really interesting. This included learning how to change
+        background colors, font colors, font styles, and sizes of different elements.
+        It was a lot of fun being able to have more control over the style of my wepages
+        than I had without using CSS last week. I became interested in what more I could do with CSS aside from what
+        was in the readings for this week so I decided to look into some fun things to use CSS for.
+    </p>
+    <p>In my research, I found a few different CSS properties that I found interesting, but my favorite
+        was shape-outside. This is what is causing the oval shape beside the text, pushing the text towards the left.
+        This allows text to wrap around an element (in this case an ellipse) which can be a pre defined shape, such as a
+        circle or
+        polygon, or even an image. Using CSS, the developer can control many factors such as the color and opacity.
+        Additionally, using clip-path, the developer can change the specific dimentions of the shape, without changing
+        its imapct on the text around it. For example, the following code created the oval which is pushing this text
+        back:</p>
+    <pre>div {
+        shape-outside: ellipse(100px 200px at 50% 50%);
+        clip-path: ellipse(100px 200px at 50% 50%);
+        width: 200px;
+        height: 500px;
+        float: left;
+        opacity: .2;
+        background-color: lightblue;
+      }   
+    </pre>
+    <h2>Sources:</h2>
+    <p><a href="https://css-tricks.com/almanac/properties/s/shape-outside/">Article on shape-outside</a></p>
+</body>
+
+</html>
