@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Post #3</title>
+    <style>
+        div {
+            width: 50px;
+            height: 100px;
+            background-color: purple;
+            animation-name: animation;
+            animation-duration: 5s;
+        }
+
+        @keyframes animation {
+            from {
+                height: 100px;
+                background-color: purple;
+            }
+
+            to {
+                height: 500px;
+                background-color: yellow;
+            }
+        }
+
+        pre {
+            display: inline-block;
+            border-color: black;
+            border-style: solid;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Blog Post #3: 9/16/21</h1>
+    <p> This week we continuted our learning about CSS and designing web pages. One of the parts we focused most
+        on was flexbox. I learned that flexbox is a useful tool for designing webpages because it makes it
+        much easier to control the layout of different elements on a page. While we were learning about flexbox
+        I got more interested in fun design elements and I came across animations in CSS.</p>
+    <p> In my reasearch I came across <a href="https://www.w3schools.com/css/css3_animations.asp">an article from
+            w3schools</a> which explains how these
+        work. Using the @keyframes element, developers can choose the start and end state of an animation.
+        In this example, I am changing the color from purple to yellow and increasing the height from
+        100px to 500px. Developers can choose which animation they want to use using animation-name and
+        the name of the animation they developed using the @keyframes element. Developers can also change the
+        duration of the animation using animation-duration. After the animation is completed, the animated object will
+        return to its original state.
+        The following code demonstrates how this webpagewas able to animate the rectangle below.</p>
+    <pre>
+    div {
+        width: 50px;
+        height: 100px;
+        background-color: purple;
+        animation-name: animation;
+        animation-duration: 5s;
+    }
+    @keyframes animation {
+        from {height: 100px; background-color: purple;}
+        to {height: 500px; background-color: yellow;}</pre>
+    <div></div>
+    <h2>Sources:</h2>
+    <p><a href="https://www.w3schools.com/css/css3_animations.asp">Article on CSS Animations</a></p>
+</body>
+
+</html>
