@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Post #8</title>
+    <style>
+        input {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.603);
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 15px;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+    <h1>Blog Post #8: 11/11/21</h1>
+    <p>
+        This week we continued our study of JavaScript in React. I have been trying to further my understnading of the fundamentials, and I realized that in doing that
+        I did not know much about how to style a page using React. Because of this I decided to look further into how to use CSS in React for my research.
+    </p>
+    <p>
+        In doing my research, I found an article on React's website titled <a href="https://www.w3schools.com/react/react_css.asp">Style React Using CSS</a>
+        which explains how react can create JavaScript objects which can hold style information. This can be used to apply specific styling information to elements.
+        The code below is from the article and I think does a good job demonstrating how this would be used. 
+        <pre>class MyHeader extends React.Component {
+            render() {
+              const mystyle = {
+                color: "white",
+                backgroundColor: "DodgerBlue",
+                padding: "10px",
+                fontFamily: "Arial"
+              };
+              return (
+                &ltdiv&gt
+                &lth1 style={mystyle}&gtHello Style!&lt/h1&gt
+                &ltp&gtAdd a little style!&lt/p&gt
+                &lt/div&gt
+              );
+            }
+          }</pre>
+    </p>
+    <h2>Sources:</h2>
+    <p>
+        <a href="https://www.w3schools.com/react/react_css.asp">
+            the article I used</a>
+    </p>
+</body>
+
+</html>
