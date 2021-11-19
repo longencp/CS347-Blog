@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Post #9</title>
+    <style>
+        input {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.603);
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 15px;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+    <h1>Blog Post #9: 11/19/21</h1>
+    <p>
+        This week we continued our study of react and JSX. It has been really interesting learning more
+        about how to use react and how it is different from the topics we covered at the beginning of the semester.
+        I became more curious about how react changes things that are also in HTML and began to research it.
+    </p>
+    <p>
+        In my research, I came across <a href="https://dev.to/tumee/react-fragments-what-why-how-2kh1">
+        an article</a> which explained fragments vs divs. Divs are not always useful and can require unnecessary 
+        syntax. As a solution, react has something called fragments. Fragments can replace wrapper divs and can hold a list
+        of html elements. For example this code from the article using divs: 
+        <pre>
+        &lttable&gt
+            &lttr&gt
+              &ltdiv&gt
+                &lttd&gtHello&lt/td&gt
+                &lttd&gtWorld&lt/td&gt
+              &lt/div&gt
+            &lt/tr&gt
+          &lt/table&gt
+        </pre>
+          could be re-written using this
+          <pre>
+            &ltReact.Fragment&gt
+                &lttd>Hello&lt/td&gt
+                &lttd>World&lt/td&gt
+              &lt/React.Fragment&gt
+          </pre>
+    </p>
+    <h2>Sources:</h2>
+    <p>
+        <a href="https://dev.to/tumee/react-fragments-what-why-how-2kh1">
+            the article I used</a>
+    </p>
+</body>
+
+</html>
